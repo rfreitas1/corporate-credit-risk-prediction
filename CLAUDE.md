@@ -87,7 +87,7 @@ corporate-credit-risk-prediction/
 - [x] Project folder structure and `requirements.txt`
 - [x] Download script and ARFF loader for the UCI dataset
 - [x] Attribute dictionary (AttrN → definition → category)
-- [ ] EDA notebook
+- [x] EDA notebook
 - [ ] Prediction target, horizon and validation strategy defined
 - [ ] Altman Z-score and logistic regression baselines
 
