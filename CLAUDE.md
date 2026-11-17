@@ -85,7 +85,7 @@ corporate-credit-risk-prediction/
 - [x] GitHub repository created (README and .gitignore)
 - [x] CLAUDE.md added
 - [x] Project folder structure and `requirements.txt`
-- [ ] Download script and ARFF loader for the UCI dataset
+- [x] Download script and ARFF loader for the UCI dataset
 - [ ] Attribute dictionary (AttrN → definition → category)
 - [ ] EDA notebook
 - [ ] Prediction target, horizon and validation strategy defined
