@@ -20,8 +20,8 @@ The author is an AI & Data Science undergraduate. The project is a portfolio pie
 
 ### Phase 1: Benchmark on the UCI Polish Companies Bankruptcy dataset
 - Source: https://archive.ics.uci.edu/dataset/365/polish+companies+bankruptcy+data
-- Format: 5 ARFF files (`1year` … `5year`). The `Nyear` file holds financial data from N years before the outcome. In total there are about 43,400 rows and 64 numeric attributes (`Attr1`–`Attr64`, ratios defined in the dataset docs). The label is `class` (1 = bankrupt).
-- Known issues: heavy class imbalance (~2–7% positive), many missing values, extreme outliers in the ratios.
+- Format: 5 ARFF files (`1year` … `5year`). The `Nyear` file holds financial data from **6 − N** years before the outcome (`1year` = 5 years before, `5year` = 1 year before; per the official UCI description). The loader exposes this as `years_before_outcome`. In total there are about 43,400 rows and 64 numeric attributes (`Attr1`–`Attr64`, ratios defined in the dataset docs). The label is `class` (1 = bankrupt).
+- Known issues: heavy class imbalance (3.9–6.9% positive), many missing values, extreme outliers in the ratios.
 - Tasks:
   1. Loader for the ARFF files (`scipy.io.arff` or `liac-arff`). Decode byte-string labels.
   2. Map each `AttrN` to its definition and to a category: profitability, liquidity, leverage, activity/efficiency, size.
@@ -86,7 +86,7 @@ corporate-credit-risk-prediction/
 - [x] CLAUDE.md added
 - [x] Project folder structure and `requirements.txt`
 - [x] Download script and ARFF loader for the UCI dataset
-- [ ] Attribute dictionary (AttrN → definition → category)
+- [x] Attribute dictionary (AttrN → definition → category)
 - [ ] EDA notebook
 - [ ] Prediction target, horizon and validation strategy defined
 - [ ] Altman Z-score and logistic regression baselines
