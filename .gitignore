@@ -221,3 +221,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---- Project-specific ----
+# PyCharm settings are per-machine
+.idea/
+
+# Data is downloaded by scripts, never committed (keep folder placeholders)
+data/**
+!data/**/
+!data/**/.gitkeep
+
+# Trained model artefacts can be large
+models/*
+!models/.gitkeep

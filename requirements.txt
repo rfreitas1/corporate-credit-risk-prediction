@@ -1,0 +1,21 @@
+# Python 3.11+ (developed on 3.12). Versions pinned for reproducibility.
+
+# Core data stack
+numpy==2.5.5
+pandas==3.1.1
+scipy==1.18.1          # scipy.io.arff reads the UCI ARFF files
+
+# Modelling
+scikit-learn==1.9.1    # pipelines, logistic regression, calibration, metrics
+lightgbm==4.7.0        # gradient boosting baseline
+shap==0.54.1           # model explanations
+
+# Plotting
+matplotlib==3.11.2
+
+# Data download (UCI now, SEC EDGAR in phase 2)
+requests==2.34.2
+
+# Notebooks
+jupyterlab==4.6.6
+ipykernel==7.4.0
