@@ -25,9 +25,9 @@
 
 The long-term goal is a small **Corporate Financial Health & Risk Assessment** tool. You pick a company and get:
 
-- 📊 its **key financial ratios** (profitability, liquidity, leverage, activity, size),
-- 🎯 a **calibrated probability of financial distress**,
-- 🔍 an **explanation of what drives that probability** (SHAP), compared with industry peers.
+- its **key financial ratios** (profitability, liquidity, leverage, activity, size),
+- a **calibrated probability of financial distress**,
+- an **explanation of what drives that probability** (SHAP), compared with industry peers.
 
 The project is built in three phases:
 
